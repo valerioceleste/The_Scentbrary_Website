@@ -30,20 +30,10 @@
   <!-- Map -->
   <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" />
 
-  <!-- 
-      Color mode switch
-      - For demonstration purposes only
-      - If you do not have the possibility to store user preferences on the backend, I highly recommend switching to a media query implementation: https://getbootstrap.com/docs/5.3/customize/color-modes/#building-with-sass
-    -->
   <script>
     (() => {
       window.addEventListener('DOMContentLoaded', () => {
-        const colorModeSwitch = document.getElementById('colorModeSwitch');
-        if (colorModeSwitch) {
-          colorModeSwitch.addEventListener('change', () => {
-            document.body.setAttribute('data-bs-theme', colorModeSwitch.checked ? 'dark' : 'light');
-          });
-        }
+        document.body.setAttribute('data-bs-theme', 'dark'); // Set dark mode as default
       });
     })();
   </script>
@@ -96,18 +86,13 @@
           </li>
         </ul>
 
-        <!-- Color mode -->
-        <div class="form-check form-switch form-switch-color-mode ms-lg-3">
-          <input class="form-check-input" type="checkbox" role="switch" id="colorModeSwitch" />
-          <label class="form-check-label" for="colodeModeSwitch"></label>
-        </div>
       </div>
     </div>
   </nav>
 
   <!-- WELCOME -->
-  <header data-jarallax data-speed=".8" style="background-image: url(assets/img/2.jpg)">
-    <div class="d-flex flex-column min-vh-100 bg-black bg-opacity-50 pt-10 pt-md-8 pb-7 pb-md-0">
+  <header class="bg-cover" data-jarallax data-speed=".8" style="background-image: url(assets/img/2.jpg);">
+    <div class="d-flex flex-column min-vh-100 pt-10 pt-md-8 pb-7 pb-md-0">
       <div class="container my-auto">
         <div class="row justify-content-center">
           <div class="col-12 col-md-8 col-lg-6 text-center">
@@ -125,7 +110,8 @@
             <!-- Social links -->
             <ul class="list-inline text-center text-md-start mb-3 my-md-5">
               <li class="list-inline-item ms-5">
-                <a class="text-white text-opacity-75 text-primary-hover" href="#!">
+                <a class="text-white text-opacity-75 text-primary-hover"
+                  href="https://m.facebook.com/profile.php?id=61551854650780&_rdr" target="_blank">
                   <i class="fab fa-facebook-f"></i>
                 </a>
               </li>
@@ -447,7 +433,7 @@
             </div>
           </div>
         </div>
-        <div class="event-lg collapse show bg-cover" id="eventOne" style="background-image: url(assets/img/8.jpg)">
+        <div class="event-lg collapse show bg-cover" id="eventOne" style="background-image: url(assets/img/1.jpg)">
           <div class="bg-black bg-opacity-50">
             <div class="container">
               <div class="row py-10">
@@ -557,7 +543,7 @@
             </div>
           </div>
         </div>
-        <div class="event-lg collapse bg-cover" id="eventThree" style="background-image: url(assets/img/10.jpg)">
+        <div class="event-lg collapse bg-cover" id="eventThree" style="background-image: url(assets/img/2.jpg)">
           <div class="bg-black bg-opacity-50">
             <div class="container">
               <div class="row py-10">
