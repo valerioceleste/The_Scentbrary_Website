@@ -587,8 +587,15 @@ progress {
 .img-fluid,
 .img-thumbnail {
   height: auto;
+  max-width: 100%;
+}
+
+.img-fluid_L
+{
+  height: auto;
   max-width: 110%;
 }
+
 .img-thumbnail {
   background-color: var(--bs-body-bg);
   border: var(--bs-border-width) solid var(--bs-border-color);
