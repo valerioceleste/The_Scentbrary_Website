@@ -590,8 +590,7 @@ progress {
   max-width: 100%;
 }
 
-.img-fluid_L
-{
+.img-fluid_L {
   height: auto;
   max-width: 110%;
 }
@@ -17595,7 +17594,7 @@ fieldset:disabled .btn {
   }
 }
 .media-decoration-1 > .media-decoration-border {
-  left: 25%;
+  left: 20%;
   top: 10%;
 }
 .media-decoration-1 > .media-decoration-solid {
